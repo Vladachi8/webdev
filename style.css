@@ -46,7 +46,16 @@ h4 {
     letter-spacing: 2.4px;
 }
 
-/* Header */
+.description, .footer__link {
+    font-family: 'Roboto', Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 143%;
+    color: #4E4E4E;
+    overflow: hidden;
+}
+
 .bg {
     background-image: url("./assets/header+life.png");
     height: 744px;
@@ -54,12 +63,22 @@ h4 {
     margin: 0 auto;
 }
 
+/* Header */
+
 .header__navigation{
-    padding-left: 502px;
-    padding-top: 31px;
+    padding-left: 72px;
+    padding-top: 25px;
 }
 
-.navigation__link {
+ul.navigation {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation__li {
+    margin-right: 85px;
     display: inline;
 }
 
@@ -70,8 +89,6 @@ h4 {
     font-size: 1.4rem;
     color: #FFFFFF;
     opacity: 0.8;
-
-    margin-right: 83px;
 
     cursor: pointer;
 }
@@ -87,43 +104,38 @@ h4 {
     opacity: 1;
 }
 
-.nav__link_space {
-    margin-left: 160px;
-    margin-right: 82px;
+.nav__li_logo {
+    padding: 0 15px;
 }
 
 .logo {
+    display: inline-block;
+    text-align: center;
     width: 44px;
     height: 45px;
+    opacity: 0.9;
 }
 
-.header__logo {
-    position: relative;
-    bottom: 42px;
-    left: 778px;
+.logo:hover {
+    opacity: 1;
 }
 
 /* Your Life */
 .your-life__content {
-    padding-top: 117px;
-}
-
-.your-life__content * {
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 158px;
+    padding-bottom: 183px;
 }
 
 .your-life__title {
-    width: 738px;
-    padding-left: 4px;
-    padding-bottom: 22px;
+    text-align: center;
+    padding: 0 0 20px 5px;
 }
 
 .your-life__description {
     font-family: 'Roboto', Verdana, sans-serif;
     font-weight: normal;
     text-align: center;
-    width: 451px;
+
     font-size: 1.8rem;
     color: #FFFFFF;
     line-height: 140%;
@@ -132,32 +144,30 @@ h4 {
 }
 
 .your-life__button {
-    width: 184px;
-    margin-top: 28px;
-    margin-bottom: 183px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;
 }
 
 .your-life__icons {
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
-    justify-content: space-between;
-    width: 170px;
-
+    justify-content: center;
 }
 
-.ico:hover {
-    opacity: 1;
-} 
+
 /* button */
 .button {
     font-family: 'Roboto', Verdana, sans-serif;
     font-weight: bold;
     color: #FFFFFF;
     font-size: 14px;
+    line-height: 16px;
     text-transform: uppercase;
     border: 0;
     background-color:#00AFDB;
+
     cursor: pointer;
     transition: all .3s ease-out;
 }
@@ -167,24 +177,80 @@ h4 {
     height: 46px;
 }
 
+.button_learn {
+    width: 180px;
+    height: 46px;
+}
+
 .button_simple:hover {
     background: #009CC2;
 }
 
+.button_sub {
+    width: 66px;
+    height: 46px;
+    border-radius: 0px;
+}
+
+.button_learn:hover {
+    background-color: #009CC2;
+}
+
+.button_sub:hover {
+    background-color: #009CC2;
+}
+
+.button_soc {
+    width: 186px;
+    height: 46px;
+    margin-right: 30px;
+    padding-left: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button_soc:hover {
+    background-color: #009CC2;
+} 
+
+.button_soc:last-child {
+    margin-right: 0;
+}
+
 /* icons */
+.icons {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.icons>*{
+    margin-right: 30px;
+    width: 20px;
+    height: 20px;
+}
+
+.ico:last-child {
+    margin-right: 0;
+}
 
 .ico {
     cursor: pointer;
     display: inline-block;
-    width: 20px;
-    height: 20px;
     opacity: 0.8;
 }
 
+.ico_logo {
+    background-image: url("./assets/icons/logo.svg");
+}
+
+.ico:hover {
+    opacity: 1;
+} 
+
 .ico_mail {
     background-image: url("./assets/icons/mail.svg");
-    width: 20px;
-    height: 20px;
 }
 
 .ico_facebook {
@@ -198,3 +264,271 @@ h4 {
 .ico_telegram {
     background-image: url("./assets/icons/telegram.svg");
 }
+
+.ico_left {
+    background-image: url("./assets/icons/left.svg");
+    width: 14px;
+    height: 14px;
+}
+
+.ico_left:hover {
+    opacity: 0.5;
+}
+
+.ico_right:hover {
+    opacity: 0.5;
+}
+
+.ico_right {
+    background-image: url("./assets/icons/right.svg");
+    width: 14px;
+    height: 14px;
+}
+
+.ico_ok {
+    background-image: url("./assets/icons/ok.svg");
+    width: 18px;
+    height: 14px;
+}
+
+.ico_apple, .ico_android {
+    background-color: #009CC2;
+    width: 59px;
+    height: 100%;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ico_apple {
+    background-image: url("./assets/icons/apple.svg");
+}
+
+.ico_android {
+    background-image: url("./assets/icons/android.svg");
+}
+
+/* Rappresent*/
+
+.rappresent__wrapper, .implement__wrapper {
+    max-width: 1062px;
+    margin: 0 auto;
+
+    padding-top: 120px;
+    padding-bottom: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rappresent__content {
+    max-width: 407px;
+}
+
+.rappresent__title {
+    margin-bottom: 20px;
+}
+
+.rappresent__description {
+    margin-bottom: 30px;
+}
+
+/* Our-community */
+
+.our-community__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    /* padding-left: 267px; */
+    padding-top: 82px;
+    padding-bottom: 140px;
+    background-color:#F5F6F7;
+    overflow: hidden;
+}
+
+.our-community__wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    max-width: 1329px;
+}
+
+.our-community__information {
+    margin-top: 72px;
+    max-width: 22%;
+}
+
+.our-community__slider {
+    max-width: 894px;
+}
+
+.our-community__image {
+    width: 45px;
+    height: 45px;
+    margin-left: 43%;
+    margin-bottom: 20px;
+}
+
+.information__title {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.our-community__description {
+    text-align: center;
+}
+
+.our-community__photo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-community__slider-img {
+    padding-right: 30px;
+}
+
+.our-community__navigation {
+    display: flex;
+    max-width: 83px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 542px;
+    margin-bottom: 18px;
+}
+
+.navigation__middle {
+    font-family: 'Roboto', Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: right;
+}
+
+/* Implement */
+
+.implement__wrapper {
+    padding-right: 108px;
+}
+
+.implement__content {
+    max-width: 407px;
+}
+
+.implement__title {
+    margin-bottom: 20px;
+}
+
+.implement__description {
+    margin-bottom: 30px;
+}
+
+/* Subscribe */
+
+.subscribe__wrapper {
+    background-image: url("./assets/subscribe.png");
+    height: 524px;
+}
+
+.subscribe__title {
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 30px;
+}
+
+.subscribe__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe__input {
+    width: 340px;
+    height: 46px;
+    
+    font-family: 'Roboto', Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    border: 1px solid white;
+
+    padding-left: 23px;
+}
+
+/* Download */
+
+.download__wrapper {
+    background-color: #F5F6F7;
+}
+
+.download__title {
+    text-align: center;
+    padding-top: 120px;
+    margin-bottom: 20px;
+}
+
+.download__description {
+    text-align: center;
+    line-height: 144%;
+    margin-bottom: 30px;
+}
+
+.download__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 180px;
+}
+
+/* Footer */
+
+.footer__bg {
+    background-color: #000000;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.footer__nav {
+    color: #FFFFFF;
+}
+
+.footer__li {
+    padding-right: 20px;
+    margin-right: 17px;
+    display: inline;
+    border-right: 1px solid #4E4E4E;
+}
+
+.footer__li:last-child {
+    margin-right: 0;
+    border-right: 0;
+}
+
+.footer__link {
+    color: #FFFFFF;
+    cursor: pointer;
+    opacity: 0.8;   
+}
+
+.footer__link:hover {
+    border-bottom: 1px solid #FFFFFF;
+    opacity: 1; 
+}
+
+.footer__logo {
+    margin-right: 86px;
+}
+
+.footer__description {
+    color: #818181;
+}
+

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <title>Webdev</title>
@@ -17,121 +17,136 @@
                 <h1>webdev</h1>
                 <nav class="header__navigation">
                     <ul class="navigation">
-                        <li class="navigation__link"><a href="#" class="nav__link active">About</a></li>
-                        <li class="navigation__link"><a href="#" class="nav__link">Syllabus</a></li>
-                        <li class="navigation__link"><a href="#" class="nav__link nav__link_space">Projects</a></li>
-                        <li class="navigation__link"><a href="#" class="nav__link">FAQ</a></li>
+                        <li class="navigation__li"><a href="#" class="nav__link active">About</a></li>
+                        <li class="navigation__li"><a href="#" class="nav__link">Syllabus</a></li>
+                        <li class="navigation__li nav__li_logo">
+                            <a href="#" class="nav__link_logo">
+                                <span class="logo ico_logo"></span>
+                            </a>
+                        </li>
+                        <li class="navigation__li"><a href="#" class="nav__link">Projects</a></li>
+                        <li class="navigation__li"><a href="#" class="nav__link">FAQ</a></li>
                     </ul>
                 </nav>
-                <object type="image/svg+xml" data="./assets/icons/logo.svg" class="logo header__logo">
-                    Your browser does not support SVG
-                </object>
             </div>
         </header>
         <section class="your-life">
             <div class="wrapper">
                 <div class="your-life__content">
                     <h2 class="your-life__title">your life is webdev</h2>
-                    <p class="your-life__description">Whatever the approach to development may be, the final program must
+                    <p class="your-life__description">Whatever the approach to development may be, the final </br>
+                        program must
                         satisfy some fundamental properties</p>
                     <div class="your-life__button">
                         <button class="button button_simple">get started</button>
                     </div>
                 </div>
                 <div class="your-life__icons">
-                    <span class="ico ico_mail"></span>
-                    <span class="ico ico_facebook"></span>
-                    <span class="ico ico_instagram"></span>
-                    <span class="ico ico_telegram"></span>
+                    <div class="icons">
+                        <span class="ico ico_mail"></span>
+                        <span class="ico ico_facebook"></span>
+                        <span class="ico ico_instagram"></span>
+                        <span class="ico ico_telegram"></span>
+                    </div>
                 </div>
             </div>
         </section>
     </div>
-        
     <section class="rappresent">
         <div class="wrapper">
-            <div class="rappresent__flex2col">
+            <div class="rappresent__wrapper">
                 <div class="rappresent__content">
-                    <h3 class="rappresent__logo">Rappresent your idea with a smart Design</h3>
-                    <p class="rappresent__description">Tasks accompanying and related to programming include: testing,
+                    <h3 class="rappresent__title">Rappresent your idea with </br>a smart Design</h3>
+                    <p class="rappresent__description description">Tasks accompanying and related to programming
+                        include: testing,
                         debugging, source code maintenance, <strong>implementation of build systems</strong>, and
                         management of derived
                         artifacts, such as the machine code of computer programs. </p>
                     <div class="rappresent__button">
-                        <button class="button button_simple">GET STARTED</button>
+                        <button class="button button_simple">get started</button>
                     </div>
                 </div>
-                <img src="./src/img/promo/promo.png" class="rappresent__image" alt="The Design Thinking superpowers">
+                <img src="./assets/rappresent.png" class="rappresent__image" alt="The Design Thinking superpowers">
             </div>
         </div>
     </section>
     <section class="our-community">
         <div class="wrapper our-community__wrapper">
-            <div class="our-community__navigation">
-                <span class="ico ico_left"></span>
-                <span class="navigation__start">1</span>
-                <span class="navigation__separation">/</span>
-                <span class="navigation__finish">5</span>
-                <span class="ico ico_right"></span>
-            </div>
-            <div class="our-community__information">
-                <h4 class="information__title">our community</h4>
-                <p class="our-community__description">A hacker is any skilled computer expert that uses their technical
-                    knowledge to overcome a problem, but it can also mean a security hacker in common language</p>
-            </div>
-            <div class="our-community__photo">
-                <img src="./src/img/promo/promo.png" class="promo__image" alt="first">
-                <img src="./src/img/promo/promo.png" class="promo__image" alt="second">
-                <img src="./src/img/promo/promo.png" class="promo__image" alt="third">
+            <div class="our-community__wrapper2">
+                <div class="our-community__information">
+                    <img src="./assets/userpic.png" class="our-community__image" alt="user pic">
+                    <h4 class="information__title">our community</h4>
+                    <p class="our-community__description description">A hacker is any skilled computer expert that uses
+                        their technical
+                        knowledge to overcome a problem, but it can also mean a security hacker in common language</p>
+                </div>
+                <div class="our-community__slider">
+                    <div class="our-community__navigation">
+                        <span class="ico ico_left"></span>
+                        <p>
+                            <span class="navigation__middle">1</span>
+                            <span class="navigation__middle">/</span>
+                            <span class="navigation__middle">5</span>
+                        </p>
+                        <span class="ico ico_right"></span>
+                    </div>
+                    <div class="our-community__photo">
+                        <img src="./assets/slider-1.png" class="our-community__slider-img" alt="first">
+                        <img src="./assets/slider-2.png" class="our-community__slider-img" alt="second">
+                        <img src="./assets/slider-3.png" class="our-community__slider-img" alt="third">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <section class="implement">
         <div class="wrapper implement__wrapper">
-            <img src="./src/img/promo/promo.png" class="implement__image" alt="first">
+            <img src="./assets/implement.png" class="implement__image" alt="first">
             <div class="implement__content">
                 <h3 class="implement__title">Implement right Code</h3>
-                <p class="implement__description">These might be considered part of the <strong>programming
+                <p class="implement__description description">These might be considered part of the <strong>programming
                         process</strong>, but often
                     the term software development is used for this larger process with the term programming,
                     implementation</p>
                 <div class="implement__button">
-                    <button class="button button_simple">learn more</button>
+                    <button class="button button_learn">learn more</button>
                 </div>
             </div>
         </div>
     </section>
     <section class="subscribe">
-        <div class="wrapper">
-            <h3 class="subscribe__title"></h3>
-            <form action="" method="POST">
-                <input type="email" name="email" placeholder="Your email">
-                <div class="subscribe__button">
-                    <button type="submit" class="button button_sub"><span class="ico ico_ok"></span></button>
-                </div>
+        <div class="wrapper subscribe__wrapper">
+            <h3 class="subscribe__title">sign up for our newsletter</h3>
+            <form action="" method="POST" class="subscribe__form">
+                <input type="email" name="email" placeholder="E-mail" class="subscribe__input">
+                <button type="submit" class="subscribe__button button button_sub"><span
+                        class="ico ico_ok"></span></button>
             </form>
         </div>
     </section>
     <section class="download">
-        <div class="wrapper">
-            <h3 class="download__title"></h3>
-            <p class="download__description">Machine code was the language of early programs, written in the instruction
+        <div class="wrapper download__wrapper">
+            <h3 class="download__title">download the app</h3>
+            <p class="download__description description">Machine code was the language of early programs, written in the
+                instruction </br>
                 set of the particular machine, often in binary notation.</p>
             <div class="download__buttons">
-                <span class="button button_short">apple store<span class="ico ico_apple"></span></span>
-                <span class="button button_short">apple store<span class="ico ico_apple"></span></span>
+                <a href="#" class="button button_soc">apple store<span class="ico ico_apple"></span></a>
+                <a href="#" class="button button_soc">play market<span class="ico ico_android"></span></a>
             </div>
         </div>
     </section>
     <footer class="footer">
-        <div class="wrapper footer__wrapper">
-            <div class="footer__nav">
-                <li class="footer__link">Credits</li>
-                <li class="footer__link">Privacy</li>
-                <li class="footer__link">Our teams</li>
+        <div class="wrapper footer__bg">
+            <div class="footer__wrapper">
+                <div class="footer__nav">
+                    <li class="footer__li"><a href="#" class="footer__link">Credits</a></li>
+                    <li class="footer__li"><a href="#" class="footer__link">Privacy</a></li>
+                    <li class="footer__li"><a href="#" class="footer__link">Our teams</a></li>
+                </div>
+                <a href="#" class="footer__logo"><span class="logo ico_logo"></span></a>
+                <p class="footer__description description">by TonYem for RSS at 2020</p>
             </div>
-            <span class="logo header__logo"></span>
-            <p class="footer__description">by TonYem for RSS at 2020</p>
         </div>
     </footer>
 </body>
